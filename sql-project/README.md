@@ -88,3 +88,7 @@ FROM sales_data
 GROUP BY month
 ORDER BY month;
 ```
+
+---
+
+****
