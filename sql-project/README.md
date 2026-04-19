@@ -38,7 +38,7 @@ CREATE TABLE sales_data (
     OrderID INT,
     OrderDate DATE,
     DeliveryDate DATE,
-    date DATE,
+    Date DATE,
     Product VARCHAR(100),
     Quantity INT,
     UnitPrice DECIMAL(10,2),
