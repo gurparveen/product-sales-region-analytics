@@ -44,4 +44,24 @@ Each folder contains the project files, screenshots, and documentation.
 
 ## 🚀Key Insights (From all tools)
 
+- Region **North** and **West** show the strongest revenue contribution  
+- Product Category **A** drives the highest profit margin  
+- Seasonal spikes observed in **Q2 and Q4**  
+- Underperforming regions show low repeat‑purchase behavior  
+- Profitability improves when discounting is reduced on low‑margin products  
+
+---
+
+## 📂 Individual Projects
+
+- **Excel Dashboard** → `/excel-project`  
+- **SQL Analysis** → `/sql-project`  
+- **Power BI Dashboard** → `/powerbi-project`  
+
+---
+
+## 📫 Contact  
+**Gurparveen – Aspiring Data Analyst**  
+https://github.com/gurparveen
+https://www.linkedin.com/in/gurparveen-analytics/
 -
