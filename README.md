@@ -37,7 +37,7 @@ product-sales-region-analytics/
 │   └── README.md
 │
 └── powerbi-project/
-    └── README.md
+└── README.md
 Each folder contains the project files, screenshots, and documentation.
 
 ---
