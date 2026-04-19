@@ -81,7 +81,7 @@ LIMIT 5;
 ```
 
 ### **2. Monthly sales trend**
-'''sql
+```sql
 SELECT DATE_TRUNC('month', order_date) AS month,
        SUM(totalprice) AS total_sales
 FROM sales_data
