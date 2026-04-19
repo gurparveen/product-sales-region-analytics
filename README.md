@@ -44,8 +44,6 @@ Each folder contains the project files, screenshots, and documentation.
 
 ## 🚀Key Insights (From all tools)
 
-## 🚀 Key Insights
-
 - **North Region leads total sales**, driven by consistently strong customer demand across all months.
 - **Tablets and Laptops deliver the highest profit**, making them the most valuable product categories in the portfolio.
 - **Sales and profit show a clear decline from March to October**, indicating a potential seasonal slowdown or reduced customer activity.
