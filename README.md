@@ -44,11 +44,13 @@ Each folder contains the project files, screenshots, and documentation.
 
 ## 🚀Key Insights (From all tools)
 
-- Region **North** and **West** show the strongest revenue contribution  
-- Product Category **A** drives the highest profit margin  
-- Seasonal spikes observed in **Q2 and Q4**  
-- Underperforming regions show low repeat‑purchase behavior  
-- Profitability improves when discounting is reduced on low‑margin products  
+## 🚀 Key Insights
+
+- **North Region leads total sales**, driven by consistently strong customer demand across all months.
+- **Tablets and Laptops deliver the highest profit**, making them the most valuable product categories in the portfolio.
+- **Sales and profit show a clear decline from March to October**, indicating a potential seasonal slowdown or reduced customer activity.
+- **Retail customers contribute slightly higher revenue than wholesale customers**, suggesting stronger performance in direct‑to‑consumer channels.
+- **Bob remains the top‑performing salesperson across all months**, consistently outperforming peers in both sales volume and revenue generation.
 
 ---
 
