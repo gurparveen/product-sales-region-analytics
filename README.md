@@ -62,6 +62,9 @@ Each folder contains the project files, screenshots, and documentation.
 
 ## 📫 Contact  
 **Gurparveen – Aspiring Data Analyst**  
+
 https://github.com/gurparveen
+
 https://www.linkedin.com/in/gurparveen-analytics/
+
 -
