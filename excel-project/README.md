@@ -22,10 +22,10 @@ This Excel project analyzes product and regional performance using pivot tables,
 
 ## 📊 Dashboard Highlights
 
-- Region **North** leads in revenue  
-- Product **Category A** shows highest profitability  
-- Sales peak in **Q2** and **Q4**  
-- Profit margin improves when discounting is reduced  
+- The **North Region leads total sales**, showing consistently strong performance across all months.
+- **Tablets and Laptops generate the highest profit**, making them the most profitable product categories.
+- **Sales and profit decline steadily from March to October**, indicating a seasonal drop in demand.
+- **Bob is the top-performing salesperson**, maintaining the highest sales across all months.
 
 ---
 
