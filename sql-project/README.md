@@ -78,6 +78,7 @@ FROM sales_data
 GROUP BY product
 ORDER BY total_revenue DESC
 LIMIT 5;
+'''
 
 ### **2. Monthly sales trend**
 '''sql
@@ -86,4 +87,4 @@ SELECT DATE_TRUNC('month', order_date) AS month,
 FROM sales_data
 GROUP BY month
 ORDER BY month;
-
+'''
