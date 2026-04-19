@@ -28,6 +28,8 @@ Understand how products perform across regions, identify revenue drivers, and hi
 
 ## 🧩 Project Structure
 The project is organized into three separate folders, each representing a different tool used to analyze the same dataset:
+
+``` 
 product-sales-region-analytics/
 │
 ├── excel-project/
@@ -37,8 +39,11 @@ product-sales-region-analytics/
 │   └── README.md
 │
 └── powerbi-project/
-└── README.md
+    └── README.md
+```
+
 Each folder contains the project files, screenshots, and documentation.
+
 
 ---
 
