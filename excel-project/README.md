@@ -31,7 +31,7 @@ This Excel project analyzes product and regional performance using pivot tables,
 
 ## 📸 Screenshots
 
-(Add your dashboard images here)
+![Excel Dashboard](product-sales-region-dashboard.png) 
 
 ---
 
