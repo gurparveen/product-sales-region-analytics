@@ -9,7 +9,7 @@ The goal is to perform data cleaning, create calculated fields, and generate bus
 
 Since the dataset was originally prepared in Excel, all information is stored in **one combined table**:
 
-- `sales_data` — contains Product details, Region, Order date, Saleperson, Customer Type, Sales amount, and Profit.
+- `sales_data` — contains product details, customer info, region, dates, pricing, discounts, and sales metrics. 
 
 ---
 
@@ -22,11 +22,12 @@ Since the dataset was originally prepared in Excel, all information is stored in
 - Created a view for simplified analysis  
 - Wrote business‑focused analytical queries:
   - Top‑selling products  
-  - Profit by region  
   - Monthly sales trends  
   - KPI calculations
   - Monthly profit trends
   - Top 5 Salesperson
+  - Revenue by region  
+  - Sales by customer type  
 
 ---
 
@@ -34,11 +35,23 @@ Since the dataset was originally prepared in Excel, all information is stored in
 
 ```sql
 CREATE TABLE sales_data (
-    order_id INT,
-    product_name VARCHAR(100),
-    category VARCHAR(50),
-    region VARCHAR(50),
-    order_date DATE,
-    sales_amount DECIMAL(10,2),
-    profit DECIMAL(10,2)
+    OrderID INT,
+    OrderDate DATE,
+    DeliveryDate DATE,
+    Date DATE,
+    Product VARCHAR(100),
+    Quantity INT,
+    UnitPrice DECIMAL(10,2),
+    Discount DECIMAL(5,2),
+    TotalPrice DECIMAL(10,2),
+    Promotion VARCHAR(50),
+    Returned VARCHAR(10),
+    CustomerName VARCHAR(100),
+    CustomerType VARCHAR(50),
+    PaymentMethod VARCHAR(50),
+    Region VARCHAR(50),
+    RegionManager VARCHAR(100),
+    StoreLocation VARCHAR(100),
+    SalesPerson VARCHAR(100),
+    ShippingCost DECIMAL(10,2)
 );
