@@ -1,57 +1,89 @@
 # SQL Analysis – Product, Sales & Region
 
-This SQL project analyzes a combined dataset containing product, sales, and regional information.  
-The goal is to perform data cleaning, create calculated fields, and generate business‑driven insights using SQL.
+This SQL project analyzes a combined transactional dataset containing product, customer, regional, and sales information.  
+The goal is to clean the data, create calculated fields, and generate business insights using SQL.
 
 ---
 
-## 🗂 Table Used
+## 📌 Project Overview
 
-Since the dataset was originally prepared in Excel, all information is stored in **one combined table**:
-
-- `sales_data` — contains product details, customer info, region, dates, pricing, discounts, and sales metrics. 
-
----
-
-## 🧱 SQL Work Performed
-
-- Created a SQL table structure based on the Excel dataset  
-- Imported cleaned Excel data into SQL  
-- Performed data type corrections  
-- Added calculated fields (e.g., profit margin)  
-- Created a view for simplified analysis  
-- Wrote business‑focused analytical queries:
-  - Top‑selling products  
-  - Monthly sales trends  
-  - KPI calculations
-  - Monthly profit trends
-  - Top 5 Salesperson
-  - Revenue by region  
-  - Sales by customer type  
+This project uses a single Excel dataset imported into SQL for analysis.  
+The dataset includes product details, customer information, pricing, discounts, delivery dates, and regional performance.  
+The objective is to perform data preparation and answer key business questions using SQL queries.
 
 ---
 
-## 🏗️ Table Creation
+## 🗂 Table Description
 
+All data is stored in **one combined table** named `sales_data`.
+
+### **Columns included:**
+
+- Date  
+- Region  
+- Product  
+- Quantity  
+- UnitPrice  
+- StoreLocation  
+- CustomerType  
+- Discount  
+- SalePerson  
+- TotalPrice  
+- PaymentMethod  
+- Promotion  
+- Returned  
+- OrderID  
+- CustomerName  
+- ShippingCost  
+- OrderDate  
+- DeliveryDate  
+- RegionManager  
+
+This structure allows analysis across products, customers, regions, pricing, and delivery performance.
+
+---
+
+## 🔧 Transformations Explained
+
+After importing the Excel file into SQL, the following transformations were performed:
+
+- Converted date fields (`order_date`, `delivery_date`, `date`) into proper DATE format  
+- Added calculated fields:
+  - **delivery_days** → difference between order and delivery dates  
+  - **discounted_price** → price after applying discount  
+- Standardized numeric fields (quantity, unitprice, shippingcost)  
+- Created a clean view (`sales_clean`) to simplify analysis queries  
+
+These steps ensure the dataset is ready for accurate business analysis.
+
+---
+
+## ❓ Business Questions Answered
+
+The SQL analysis focuses on answering key business questions such as:
+
+- Which products generate the highest revenue?  
+- Which regions perform best in total sales?  
+- What is the monthly sales trend?  
+- How do different customer types contribute to revenue?   
+
+---
+
+## 📝 Sample Queries 
+
+### **1. Top 5 products by revenue**
 ```sql
-CREATE TABLE sales_data (
-    OrderID INT,
-    OrderDate DATE,
-    DeliveryDate DATE,
-    Date DATE,
-    Product VARCHAR(100),
-    Quantity INT,
-    UnitPrice DECIMAL(10,2),
-    Discount DECIMAL(5,2),
-    TotalPrice DECIMAL(10,2),
-    Promotion VARCHAR(50),
-    Returned VARCHAR(10),
-    CustomerName VARCHAR(100),
-    CustomerType VARCHAR(50),
-    PaymentMethod VARCHAR(50),
-    Region VARCHAR(50),
-    RegionManager VARCHAR(100),
-    StoreLocation VARCHAR(100),
-    SalesPerson VARCHAR(100),
-    ShippingCost DECIMAL(10,2)
-);
+SELECT product, SUM(totalprice) AS total_revenue
+FROM sales_data
+GROUP BY product
+ORDER BY total_revenue DESC
+LIMIT 5;
+
+### **2. Monthly sales trend**
+'''sql
+SELECT DATE_TRUNC('month', order_date) AS month,
+       SUM(totalprice) AS total_sales
+FROM sales_data
+GROUP BY month
+ORDER BY month;
+
