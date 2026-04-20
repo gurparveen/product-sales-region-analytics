@@ -1,6 +1,6 @@
 # Power BI Dashboard – Product, Sales & Region Analytics
 
-This Power BI dashboard visualizes key insights from the Product–Sales–Region dataset.  
+This Power BI dashboard visualizes key insights from the ProductSalesRegion dataset.  
 It highlights sales performance, profit trends, customer behavior, and operational metrics such as delivery time.
 
 ---
