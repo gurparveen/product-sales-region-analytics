@@ -97,14 +97,15 @@ Additional calculated columns created in Power BI:
 
 ## 📸 Screenshots
 
-![Power BI dashboard](ProductSalesRegion.png)
+ ![Power BI dashboard](ProductSalesRegion.png)
 
 ---
 
 ## 📁 Files Included
 
-- `dashboard.pbix` – Power BI report file  
-- `README.md` – Documentation for the Power BI project  
+- [dashboard.pbix](Product-Sales_region-Dashboard) – Power BI report file  
+- `README.md` – Documentation for the Power BI project
+- [screenshot](ProductSalesRegion.png) - Dashboard image
 
 ---
 
