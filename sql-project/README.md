@@ -97,6 +97,7 @@ SELECT
 - [create_table.sql](create_table.sql)  
 - [transformation.sql](tramformations.sql)  
 - [analysis_queries.sql](analysis_queries.sql)
+- `README.md` – Documentation for the SQL project
 
 
 ---
