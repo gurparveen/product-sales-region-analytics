@@ -48,11 +48,10 @@ This structure allows analysis across products, customers, regions, pricing, and
 After importing the Excel file into SQL, the following transformations were performed:
 
 - Converted date fields (`order_date`, `delivery_date`, `date`) into proper DATE format  
-- Added calculated fields:
-  - **delivery_days** → difference between order and delivery dates  
+- Added calculated fields: 
   - **discounted_price** → price after applying discount  
 - Standardized numeric fields (quantity, unitprice, shippingcost)  
-- Created a clean view (`sales_clean`) to simplify analysis queries  
+- Created a clean view (`vw_profit`) to simplify analysis queries  
 
 These steps ensure the dataset is ready for accurate business analysis.
 
