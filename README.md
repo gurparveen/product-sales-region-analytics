@@ -56,7 +56,6 @@ Each folder contains the project files, screenshots, and documentation.
 - Cleaned raw dataset in Excel  
 - Standardized date formats  
 - Fixed numeric inconsistencies  
-- Added calculated fields (delivery_days, discounted_price)  
 - Loaded into SQL for deeper analysis  
 - Exported final dataset to Power BI  
 
@@ -70,9 +69,7 @@ Across SQL + Power BI, the following metrics were created:
 - **Profit Margin %**  
 - **Average Order Value (AOV)**  
 - **Total Orders**  
-- **Return Rate**  
-- **Delivery Days**  
-- **Discounted Price**  
+- **Return Rate**   
 - **Year**  
 - **Month Name**  
 
@@ -85,8 +82,7 @@ Across SQL + Power BI, the following metrics were created:
 - Which products generate the highest profit?  
 - Which salesperson contributes the most to total sales?  
 - How do different customer types contribute to revenue?  
-- Which regions perform best?  
-- What is the average delivery time?  
+- Which regions perform best?    
 
 ---
 
