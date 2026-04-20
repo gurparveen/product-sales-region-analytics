@@ -1,0 +1,21 @@
+CREATE TABLE ProductSalesRegion (
+    OrderID INT,
+    OrderDate DATE,
+    DeliveryDate DATE,
+    Date DATE,
+    Product VARCHAR(100),
+    Quantity INT,
+    UnitPrice DECIMAL(10,2),
+    Discount DECIMAL(5,2),
+    TotalPrice DECIMAL(10,2),
+    Promotion VARCHAR(50),
+    Returned VARCHAR(10),
+    CustomerName VARCHAR(100),
+    CustomerType VARCHAR(50),
+    PaymentMethod VARCHAR(50),
+    Region VARCHAR(50),
+    RegionManager VARCHAR(100),
+    StoreLocation VARCHAR(100),
+    SalePerson VARCHAR(100),
+    ShippingCost DECIMAL(10,2)
+);
