@@ -1,28 +1,24 @@
-# product-sales-region-analytics
-End‑to‑end data analytics project using Excel, SQL, and Power BI with the product–sales–region dataset.
-# Product–Sales–Region Analytics  
-### Excel • SQL • Power BI
+# Product, Sales & Region Analytics – End-to-End Data Analysis Project
 
-This portfolio project analyzes product performance, sales trends, and regional profitability using the same dataset across **three different tools**.  
-It demonstrates end‑to‑end data analytics skills: cleaning, modeling, querying, visualization, and business insight generation.
+This project demonstrates an end-to-end data analysis workflow using Excel, SQL, and Power BI.  
+It analyzes product performance, sales trends, customer behavior, and regional insights using a single combined dataset.
+
+The project includes:
+- Excel dashboard  
+- SQL data cleaning, transformations, and analysis  
+- Power BI interactive dashboard  
+- Business insights and KPIs  
 
 ---
 
-## 📊 Project Overview
+## 📌 Project Overview
 
-**Business Goal:**  
-Understand how products perform across regions, identify revenue drivers, and highlight opportunities to improve profitability.
+The goal of this project is to analyze sales, profit, customer types, and regional performance to uncover trends and support business decision-making.  
+The workflow includes:
 
-**Dataset Includes:**  
-- Product details  
-- Sales transactions  
-- Regional information  
-- Profit & cost metrics  
-
-**Tools Used:**  
-- **Excel** – Data cleaning, pivot tables, KPI dashboard  
-- **SQL** – Data modeling, joins, aggregations, business queries  
-- **Power BI** – Interactive dashboard with DAX measures  
+1. **Excel** – Initial cleaning + Excel dashboard  
+2. **SQL** – Data preparation + business analysis queries  
+3. **Power BI** – Interactive dashboard + DAX measures + insights  
 
 ---
 
@@ -33,13 +29,21 @@ The project is organized into three separate folders, each representing a differ
 product-sales-region-analytics/
 │
 ├── excel-project/
-│   └── README.md
+│   ├── README.md
+│   ├── raw-product-sale-region.csv
+│   ├── cleaned_data.xlsx
+│   └── dashboard.png
 │
 ├── sql-project/
-│   └── README.md
+│   ├── README.md
+│   ├── create_tables.sql
+│   ├── transformations.sql
+│   └── analysis_queries.sql
 │
 └── powerbi-project/
-    └── README.md
+|    ├── README.md
+|    ├── screenshot
+|    └── dashboard.pbix
 ```
 
 Each folder contains the project files, screenshots, and documentation.
@@ -47,23 +51,89 @@ Each folder contains the project files, screenshots, and documentation.
 
 ---
 
-## 🚀Key Insights (From all tools)
+## 🧹 Data Preparation Summary
 
-- **North Region leads total sales**, driven by consistently strong customer demand across all months.
-- **Tablets and Laptops deliver the highest profit**, making them the most valuable product categories in the portfolio.
-- **Sales and profit show a clear decline from March to October**, indicating a potential seasonal slowdown or reduced customer activity.
-- **Retail customers contribute slightly higher revenue than wholesale customers**, suggesting stronger performance in direct‑to‑consumer channels.
-- **Bob remains the top‑performing salesperson across all months**, consistently outperforming peers in both sales volume and revenue generation.
+- Cleaned raw dataset in Excel  
+- Standardized date formats  
+- Fixed numeric inconsistencies  
+- Added calculated fields (delivery_days, discounted_price)  
+- Loaded into SQL for deeper analysis  
+- Exported final dataset to Power BI  
+
+---
+
+## 🧮 Key Metrics Calculated
+
+Across SQL + Power BI, the following metrics were created:
+
+- **Profit**  
+- **Profit Margin %**  
+- **Average Order Value (AOV)**  
+- **Total Orders**  
+- **Return Rate**  
+- **Delivery Days**  
+- **Discounted Price**  
+- **Year**  
+- **Month Name**  
 
 ---
 
-## 📂 Individual Projects
+## ❓ Business Questions Answered
 
-- **Excel Dashboard** → `/excel-project`  
-- **SQL Analysis** → `/sql-project`  
-- **Power BI Dashboard** → `/powerbi-project`  
+- How do total sales change month-to-month?  
+- How does monthly profit vary over time?  
+- Which products generate the highest profit?  
+- Which salesperson contributes the most to total sales?  
+- How do different customer types contribute to revenue?  
+- Which regions perform best?  
+- What is the average delivery time?  
 
 ---
+
+## ⭐ Key Insights
+
+- **North Region leads total sales**, showing consistently strong performance.  
+- **Tablets and Laptops deliver the highest profit**, making them top product categories.  
+- **Sales and profit decline from March to October**, indicating seasonal slowdown.  
+- **Retail customers contribute slightly higher revenue than wholesale customers.**  
+- **Bob is the top-performing salesperson across all months.**  
+
+---
+
+## 🛠 Tools & Technologies Used
+
+- **Excel** – Cleaning, pivot tables, Excel dashboard  
+- **SQL** – Data preparation, transformations, business queries  
+- **Power BI** – Interactive dashboard, DAX measures, KPIs  
+
+---
+
+## 📁 Project Components
+
+### 🔹 Excel Project
+- Cleaned dataset  
+- Pivot tables  
+- Excel dashboard  
+- KPI cards  
+
+### 🔹 SQL Project
+- Table creation  
+- Data cleaning & transformations  
+- Business analysis queries  
+- SQL-based insights  
+
+### 🔹 Power BI Project
+- Interactive dashboard  
+- Calculated columns  
+- DAX measures  
+- Key insights  
+
+---
+
+## ✅ Summary
+
+This project showcases a complete analytics workflow from raw data to insights.  
+It demonstrates skills in data cleaning, SQL analysis, dashboard design, and business storytelling — essential for a data analyst role.
 
 ## 📫 Contact  
 **Gurparveen – Aspiring Data Analyst**  
