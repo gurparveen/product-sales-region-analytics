@@ -97,7 +97,7 @@ Additional calculated columns created in Power BI:
 
 ## 📸 Screenshots
 
-(Add your Power BI dashboard images here)
+![Power BI dashboard](ProductSalesRegion.png)
 
 ---
 
