@@ -15,7 +15,7 @@ The objective is to perform data preparation and answer key business questions u
 
 ## 🗂 Table Description
 
-All data is stored in **one combined table** named `sales_data`.
+All data is stored in **one combined table** named `ProductSalesRegion`.
 
 ### **Columns included:**
 
@@ -75,7 +75,7 @@ The SQL analysis focuses on answering key business questions such as:
 ### **1. Top 5 products by revenue**
 ```sql
 SELECT product, SUM(totalprice) AS total_revenue
-FROM sales_data
+FROM ProductSalesRegion
 GROUP BY product
 ORDER BY total_revenue DESC
 LIMIT 5;
