@@ -94,9 +94,9 @@ SELECT
 
 ## 📁 Files Included  
 
--[create_table.sql](create_table.sql)  
--[transformation.sql](tramformations.sql)  
--[analysis_queries.sql](analysis_queries.sql)
+- [create_table.sql](create_table.sql)  
+- [transformation.sql](tramformations.sql)  
+- [analysis_queries.sql](analysis_queries.sql)
 
 
 ---
