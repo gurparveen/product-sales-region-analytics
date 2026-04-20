@@ -64,8 +64,10 @@ The SQL analysis focuses on answering key business questions such as:
 
 - Which products generate the highest revenue?  
 - Which regions perform best in total sales?  
-- What is the monthly sales trend?  
-- How do different customer types contribute to revenue?   
+- What is the monthly sales trend?
+- What is the monthly profit trend?  
+- How do different customer types contribute to revenue?
+- Which salesperson contributes the most to total sales?  
 
 ---
 
@@ -82,12 +84,21 @@ LIMIT 5;
 
 ### **2. Monthly sales trend**
 ```sql
-SELECT DATE_TRUNC('month', order_date) AS month,
-       SUM(totalprice) AS total_sales
-FROM sales_data
-GROUP BY month
-ORDER BY month;
+SELECT
+		MONTH(OrderDate) AS Month,
+		SUM(TotalPrice) AS MonthlySales
+		FROM ProductSalesRegion
+		GROUP BY MONTH(OrderDate)
+		ORDER BY Month
 ```
+---  
+
+## 📁 Files Included  
+
+-[create_table.sql](create_table.sql)  
+-[transformation.sql](tramformations.sql)  
+-[analysis_queries.sql](analysis_queries.sql)
+
 
 ---
 
