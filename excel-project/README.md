@@ -39,4 +39,5 @@ This Excel project analyzes product and regional performance using pivot tables,
 
 - [raw-product-sale-region.xlsx](Product-Sales-Region.csv.xlsx)
 - [cleaned_data.xlsx](Product-Sales-Region.xlsx)
+- `README.md` – Documentation for the Excel project
 
